@@ -198,7 +198,7 @@
       </div>
       <div id="secondary-buttons" class="container-fluid text-center" <?php echo $displayStyle; ?> >
          <?php pan_controls(); ?>
-         <a href="preview.php" class="btn btn-default">Download Videos and Images</a>
+         <a href="preview.php" class="btn btn-primary">Download Videos and Images</a>
          &nbsp;&nbsp;
         
       </div>
