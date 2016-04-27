@@ -401,13 +401,7 @@
             }
          </script>
 
-         <h1><?php echo TXT_FILES; ?>
-         <button class='btn btn-primary' type='submit' name='action' value='selectNone'><?php echo BTN_SELECTNONE; ?></button>
-         <button class='btn btn-primary' type='submit' name='action' value='selectAll'><?php echo BTN_SELECTALL; ?></button>
-         <button class='btn btn-primary' type='submit' name='action' value='zipSel'><?php echo BTN_GETZIP; ?></button>
-         <button class='btn btn-danger' type='submit' name='action' value='deleteSel' onclick="return confirm('Are you sure?');"><?php echo BTN_DELETESEL; ?></button>
-         <button class='btn btn-danger' type='submit' name='action' value='deleteAll' onclick="return confirm('Are you sure?');"><?php echo BTN_DELETEALL; ?></button>
-         </h1>
+       
          <?php
          diskUsage();
          if(CONTROLS_POS == 'top') settingsControls();
