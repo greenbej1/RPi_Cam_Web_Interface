@@ -317,8 +317,7 @@
       global $previewSize,$thumbSize,$sortOrder, $showTypes;
       global $timeFilter, $timeFilterMax;
       
-      echo TXT_PREVIEW . " <input type='text' size='4' name='previewSize' value='$previewSize'>";
-      echo "&nbsp;&nbsp;" . TXT_THUMB . " <input type='text' size='3' name='thumbSize' value='$thumbSize'>";
+      
       echo '&nbsp;Sort&nbsp;<select id="sortOrder" name="sortOrder">';
       if ($sortOrder == 1) $selected = "selected"; else $selected = "";
       echo "<option value='1' $selected>Ascending</option>";
