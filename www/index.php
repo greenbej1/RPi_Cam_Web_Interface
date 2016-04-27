@@ -191,8 +191,8 @@
       <div class="container-fluid text-center liveimage">
          <div><img id="mjpeg_dest" <?php echo getLoadClass() . getImgWidth();?> <?php if(file_exists("pipan_on")) echo "ontouchstart=\"pipan_start()\""; ?> onclick="toggle_fullscreen(this);" src="./loading.jpg"></div>
          <div id="main-buttons" <?php echo $displayStyle; ?> >
-            <input id="image_button" type="button" class="btn btn-primary">
-            <input id="video_button" type="button" class="btn btn-primary">
+            <input id="image_button" type="button" class="btn btn-default">
+            <input id="video_button" type="button" class="btn btn-default">
             
             
  
