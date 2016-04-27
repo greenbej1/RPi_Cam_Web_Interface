@@ -189,7 +189,7 @@ ajax_status.onreadystatechange = function() {
 
     if(ajax_status.responseText == "ready") {
       document.getElementById("video_button").disabled = false;
-      document.getElementById("video_button").value = "record video start";
+      
       document.getElementById("video_button").onclick = function() {send_cmd("ca 1");};
       document.getElementById("image_button").disabled = false;
       document.getElementById("image_button").value = "Take Picture";
@@ -209,7 +209,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "md_ready") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video start";
+     
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = false;
       document.getElementById("image_button").value = "Take Picture";
@@ -229,7 +229,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "timelapse") {
       document.getElementById("video_button").disabled = false;
-      document.getElementById("video_button").value = "record video start";
+      
       document.getElementById("video_button").onclick = function() {send_cmd("ca 1");};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "Take Picture";
@@ -247,7 +247,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "tl_md_ready") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video start";
+      
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = false;
       document.getElementById("image_button").value = "Take Picture";
@@ -267,7 +267,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "video") {
       document.getElementById("video_button").disabled = false;
-      document.getElementById("video_button").value = "record video stop";
+      
       document.getElementById("video_button").onclick = function() {send_cmd("ca 0");};
       document.getElementById("image_button").disabled = false;
       document.getElementById("image_button").value = "Take Picture";
@@ -285,7 +285,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "md_video") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video stop";
+      
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = false;
       document.getElementById("image_button").value = "Take Picture";
@@ -303,7 +303,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "tl_video") {
       document.getElementById("video_button").disabled = false;
-      document.getElementById("video_button").value = "record video stop";
+      
       document.getElementById("video_button").onclick = function() {send_cmd("ca 0");};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "Take Picture";
@@ -321,7 +321,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "tl_md_video") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video stop";
+     
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "Take Picture";
@@ -339,7 +339,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "image") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video start";
+      
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "recording image";
@@ -357,7 +357,7 @@ ajax_status.onreadystatechange = function() {
     }
     else if(ajax_status.responseText == "halted") {
       document.getElementById("video_button").disabled = true;
-      document.getElementById("video_button").value = "record video start";
+     
       document.getElementById("video_button").onclick = function() {};
       document.getElementById("image_button").disabled = true;
       document.getElementById("image_button").value = "Take Picture";
