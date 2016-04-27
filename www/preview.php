@@ -296,7 +296,22 @@
       return $thumbnails;   
    }
    
-   
+   function diskUsage() {
+      //Get disk data
+      $totalSize = round(disk_total_space(BASE_DIR . '/' . MEDIA_PATH) / 1048576); //MB
+      $currentAvailable = round(disk_free_space(BASE_DIR . '/' . MEDIA_PATH) / 1048576); //MB
+      $percentUsed = round(($totalSize - $currentAvailable)/$totalSize * 100, 1);
+      if ($percentUsed > 98)
+         $colour = 'Red';
+      else if ($percentUsed > 90)
+         $colour = 'Orange';
+      else
+         $colour = 'LightGreen';
+      echo '<div style="margin-left:5px;position:relative;width:300px;border:1px solid #ccc;">';
+         echo "<span>Used:$percentUsed%  Total:$totalSize(MB)</span>";
+         echo "<div style='z-index:-1;position:absolute;top:0px;width:$percentUsed%;background-color:$colour;'>&nbsp;</div>";
+      echo '</div>';
+   }
    
    function settingsControls() {
       global $previewSize,$thumbSize,$sortOrder, $showTypes;
