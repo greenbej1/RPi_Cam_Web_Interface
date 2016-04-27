@@ -153,14 +153,7 @@
       }
    }
    
-   $toggleButton = "Simple";
-   $displayStyle = 'style="display:block;"';
-   if(isset($_COOKIE["display_mode"])) {
-      if($_COOKIE["display_mode"] == "Simple") {
-         $toggleButton = "Full";
-         $displayStyle = 'style="display:none;"';
-      }
-   }
+ 
    
    $streamButton = "MJPEG-Stream";
    $mjpegmode = 0;
@@ -194,15 +187,13 @@
             </div>
          </div>
       </div>
-      <input id="toggle_display" type="button" class="btn btn-primary" value="<?php echo $toggleButton; ?>" style="position:absolute;top:60px;right:10px;" onclick="set_display(this.value);">
+      
       <div class="container-fluid text-center liveimage">
          <div><img id="mjpeg_dest" <?php echo getLoadClass() . getImgWidth();?> <?php if(file_exists("pipan_on")) echo "ontouchstart=\"pipan_start()\""; ?> onclick="toggle_fullscreen(this);" src="./loading.jpg"></div>
          <div id="main-buttons" <?php echo $displayStyle; ?> >
             <input id="video_button" type="button" class="btn btn-primary">
             <input id="image_button" type="button" class="btn btn-primary">
-            <input id="timelapse_button" type="button" class="btn btn-primary">
-            <input id="md_button" type="button" class="btn btn-primary">
-            <input id="halt_button" type="button" class="btn btn-danger">
+ 
          </div>
       </div>
       <div id="secondary-buttons" class="container-fluid text-center" <?php echo $displayStyle; ?> >
