@@ -182,7 +182,7 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" <?php echo $displayStyle; ?>>
          <div class="container">
             <div class="navbar-header">
-               <a class="navbar-brand" href="#"><?php echo CAM_STRING; ?></a>
+               
             </div>
          </div>
       </div>
