@@ -385,17 +385,7 @@
       <div class="container-fluid">
       <form action="preview.php" method="POST">
          <div id='preview' style="display: none; min-height: <?php echo $previewSize ?>px">
-            <h1>
-               <?php echo TXT_PREVIEW ?>: <span id='media-title'></span>
-               <input type='button' value='&larr;' class='btn btn-primary' name='prev'>
-               <input type='button' value='&rarr;' class='btn btn-primary' name='next'>
-
-               <button class='btn btn-primary' type='submit' name='download1'><?php echo BTN_DOWNLOAD; ?></button>
-               <button class='btn btn-danger' type='submit' name='delete1'><?php echo BTN_DELETE; ?></button>
-               
-               <button class='btn btn-primary' type='submit' name='convert'><?php echo BTN_CONVERT ?></button>
-               <br>
-            </h1>
+         
 
             <div id="convert-details">
                Convert using: <input type='text' size=72 name = 'convertCmd' id='convertCmd' value='<?php echo $convertCmd ?>'><br><br>
