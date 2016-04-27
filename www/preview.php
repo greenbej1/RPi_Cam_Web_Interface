@@ -313,7 +313,39 @@
       echo '</div>';
    }
    
-   
+   function settingsControls() {
+      global $previewSize,$thumbSize,$sortOrder, $showTypes;
+      global $timeFilter, $timeFilterMax;
+      
+      
+      echo '&nbsp;Sort&nbsp;<select id="sortOrder" name="sortOrder">';
+      if ($sortOrder == 1) $selected = "selected"; else $selected = "";
+      echo "<option value='1' $selected>Ascending</option>";
+      if ($sortOrder == 2) $selected = "selected"; else $selected = "";
+      echo "<option value='2'  $selected>Descending</option>";
+      echo '</select>';
+      echo '&nbsp;Types&nbsp;<select id="showTypes" name="showTypes">';
+      if ($showTypes == 1) $selected = "selected"; else $selected = "";
+      echo "<option value='1' $selected>Images &amp Videos</option>";
+      if ($showTypes == 2) $selected = "selected"; else $selected = "";
+      echo "<option value='2'  $selected>Images only</option>";
+      if ($showTypes == 3) $selected = "selected"; else $selected = "";
+      echo "<option value='3'  $selected>Videos only</option>";
+      echo '</select>';
+      echo '&nbsp;Filter&nbsp;<select id="timeFilter" name="timeFilter">';
+      if ($timeFilter == 1) $selected = "selected"; else $selected = "";
+      echo "<option value='1' $selected>All</option>";
+      for($tf = 2; $tf < $timeFilterMax;$tf++) {
+         if ($timeFilter == $tf) $selected = "selected"; else $selected = "";
+         $tfStr = ($tf-2) * 24 . '-' . ($tf-1) * 24 . ' hours old';
+         echo "<option value='$tf'  $selected>$tfStr</option>";
+      }
+      if ($timeFilter >= $timeFilterMax) $selected = "selected"; else $selected = "";
+      $tfStr = $timeFilterMax * 24 . '+ hours old';
+      echo "<option value='$timeFilterMax'  $selected>$tfStr</option>";
+      echo '</select>';
+      echo "&nbsp;<button class='btn btn-primary' type='submit' name='action' value='updateSizeOrder'>" . BTN_UPDATESIZEORDER . "</button><br>";
+   }
    
    $convertCmd = file_get_contents(BASE_DIR . '/' . CONVERT_CMD);
    $thumbnails = getThumbnails();
