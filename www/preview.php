@@ -3,18 +3,7 @@
    require_once(BASE_DIR.'/config.php');
   
    //Text labels here
-   define('BTN_DOWNLOAD', 'Download');
-   define('BTN_DELETE', 'Delete');
-   define('BTN_CONVERT', 'Start Convert');
-   define('BTN_DELETEALL', 'Delete All');
-   define('BTN_DELETESEL', 'Delete Sel');
-   define('BTN_SELECTALL', 'Select All');
-   define('BTN_SELECTNONE', 'Select None');
-   define('BTN_GETZIP', 'Get Zip');
-   define('BTN_UPDATESIZEORDER', 'Update');
-   define('TXT_PREVIEW', 'Preview');
-   define('TXT_THUMB', 'Thumb');
-   define('TXT_FILES', 'Files');
+  
    
    define('CONVERT_CMD', 'convertCmd.txt');
    
