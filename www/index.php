@@ -200,7 +200,7 @@
       </div>
       <div id="secondary-buttons" class="container-fluid text-center" <?php echo $displayStyle; ?> >
          <?php pan_controls(); ?>
-         <a href="preview.php" class="btn btn-primary">Photos</a>
+         <a href="preview.php" class="btn btn-default">Photos</a>
          &nbsp;&nbsp;
         
       </div>
