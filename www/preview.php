@@ -344,7 +344,7 @@
       $tfStr = $timeFilterMax * 24 . '+ hours old';
       echo "<option value='$timeFilterMax'  $selected>$tfStr</option>";
       echo '</select>';
-      echo "&nbsp;<button class='btn btn-primary' type='submit' name='action' value='updateSizeOrder'>" . BTN_UPDATESIZEORDER . "</button><br>";
+   
    }
    
    $convertCmd = file_get_contents(BASE_DIR . '/' . CONVERT_CMD);
