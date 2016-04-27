@@ -241,8 +241,7 @@
          $fsz = 0;
          $fModTime = filemtime(MEDIA_PATH . "/$f");
       }
-      $fDate = @date('Y-m-d', $fModTime);
-      $fTime = @date('H:i:s', $fModTime);
+     
       $fWidth = max($ts + 4, 150);
       echo "<fieldset class='fileicon' style='width:" . $fWidth . "px;'>";
       echo "<legend class='fileicon'>";
