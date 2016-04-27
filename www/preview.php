@@ -228,8 +228,7 @@
             $fIcon = 'timelapse.png';
             $lapseCount = '(' . count(findLapseFiles($f)). ')';
             break;
-         case 'i': $fIcon = 'image.png'; break;
-         default : $fIcon = 'image.png'; break;
+         
       }
       $duration ='';
       if (file_exists(MEDIA_PATH . "/$rFile")) {
