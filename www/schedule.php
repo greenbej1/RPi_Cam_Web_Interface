@@ -325,7 +325,7 @@
                      } else {
                         echo '<a class="navbar-brand" href="' . ROOT_PHP . '">';
                      }
-                     echo '<span class="glyphicon glyphicon-chevron-left"></span>Back - ' . CAM_STRING . '</a>';
+                     
                   echo '</div>';
                echo '</div>';
             echo '</div>';
