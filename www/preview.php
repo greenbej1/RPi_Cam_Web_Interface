@@ -305,9 +305,7 @@
          $colour = 'Orange';
       else
          $colour = 'LightGreen';
-      echo '<div style="margin-left:5px;position:relative;width:300px;border:1px solid #ccc;">';
-        
-         echo "<div style='z-index:-1;position:absolute;top:0px;width:$percentUsed%;background-color:$colour;'>&nbsp;</div>";
+     
       echo '</div>';
    }
    
